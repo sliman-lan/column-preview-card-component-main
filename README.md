@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/html5-css3-only-dbIl3y2Rbm)
+- Live Site URL: (https://sliman-lan.github.io/column-preview-card-component-main/)
 
 ## My process
 
