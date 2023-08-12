@@ -1,116 +1,118 @@
 :root {
-  --Bright-orange: hsl(31, 77%, 52%);
-  --Dark-cyan: hsl(184, 100%, 22%);
-  --Very-dark-cyan: hsl(179, 100%, 13%);
-  --Transparent-white: hsla(0, 0%, 100%, 0.75);
-  --very-light-gray: hsl(0, 0%, 95%);
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-size: 15px;
-  font-family: Lexend Deca;
-  font-weight: 400;
-  background-color: var(--very-light-gray);
-  padding: 8% 15%;
-  height: 100vh;
+    font-size: 15px;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    background-color: var(--very-light-gray);
+    padding: 8% 15%;
+    height: 100vh;
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 100%;
-  border-radius: 8px;
-  overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    min-height: 100%;
+    border-radius: 8px;
+    justify-content: center;
 }
 
 .card {
-  padding: 40px 45px;
-  width: calc(100% / 3);
-  height: 100%;
+    padding: 40px 45px;
+    height: 100%;
 }
 
 .sedans {
-  background-color: var(--Bright-orange);
+    background-color: var(--Bright-orange);
 }
 
 .suv {
-  background-color: var(--Dark-cyan);
+    background-color: var(--Dark-cyan);
 }
 
 .luxury {
-  background-color: var(--Very-dark-cyan);
+    background-color: var(--Very-dark-cyan);
 }
 
 .card img {
-  text-align: left;
+    text-align: left;
 }
 
 .content {
-  text-align: left;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .card h1 {
-  color: var(--very-light-gray);
-  font-family: Big Shoulders Display;
-  font-weight: 700;
-  margin: 20px 0;
+    color: var(--very-light-gray);
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    margin: 20px 0;
+    text-transform: uppercase;
 }
 
 .card p {
-  color: var(--Transparent-white);
-  letter-spacing: 0.5px;
-  margin-bottom: 45px;
-  line-height: 1.8;
+    color: var(--Transparent-white);
+    letter-spacing: 0.5px;
+    margin-bottom: 45px;
+    line-height: 1.8;
 }
 
 .btn-more {
-  text-decoration: none;
-  padding: 10px 20px;
-  background-color: var(--very-light-gray);
-  display: inline-block;
-  border-radius: 20px;
-  transition: all 0.2s;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: var(--very-light-gray);
+    display: inline-block;
+    border-radius: 20px;
+    transition: all 0.2s;
+    border: 2px solid transparent;
 }
 
 .card:first-child .btn-more {
-  color: var(--Bright-orange);
+    color: var(--Bright-orange);
 }
 
 .card:nth-child(2) .btn-more {
-  color: var(--Dark-cyan-orange);
+    color: var(--Dark-cyan-orange);
 }
 
 .card:nth-child(3) .btn-more {
-  color: var(--Very-dark-cyan);
+    color: var(--Very-dark-cyan);
 }
 
 .card .btn-more:hover {
-  cursor: pointer;
-  background-color: transparent;
-  border: 2px solid var(--very-light-gray);
-  color: var(--very-light-gray);
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--very-light-gray);
+    border-color: var(--very-light-gray);
 }
 
-/* Tablet */
-@media screen and (max-width: 768px) {
-  .card {
-    width: calc(100%);
-  }
+.attribution {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eceff1;
+    box-shadow: 1px 1px 5px 0px #989696;
+    padding: 10px;
+    margin-top: 10px;
+    gap: 5px;
 }
 
-/* Mobile  */
-@media screen and (max-width: 375px) {
-  .card {
-    width: 100%;
-  }
+.attribution > a {
+    text-decoration: none;
+    color: #ff6f00;
 }
